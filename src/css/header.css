@@ -1,1 +1,124 @@
-/* стилізуй=) */
+/* стилізуй=) */ 
+/* Ok */
+body{
+    background-color: #F59426;
+}
+.hidden {
+    display: none;
+}
+
+.header-div {
+    background-color: grey;
+    padding: 32px 16px 16px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.navigation {
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    color: white;
+    height: 28px;
+    align-items: center;
+}
+
+.nav-list-in-modal {
+    box-sizing: border-box;
+    backdrop-filter: blur(53.900001525878906px);
+    box-shadow: inset 4px 4px 6px 0 rgba(0, 0, 0, 0.25), inset 1px 1px 1px 0 rgba(0, 0, 0, 0.25), inset -4px -4px 4px 0 rgba(148, 148, 148, 0.25);
+    background: linear-gradient(360deg, rgba(2, 2, 2, 0.4) 0%, rgba(62, 62, 62, 0.4) 100%);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 28px;
+    align-items: end;
+    padding: 18px 18px;
+    width: 152px;
+    justify-content: space-between;
+    height: 234px; 
+    border-radius: 16px;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    color: #F59426;
+}
+
+.burger-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.header-button:hover,
+.header-button:focus {
+    fill: #F59426;
+}
+
+.header-button {
+    margin-left: auto;
+}
+
+.profile-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/favicon.png);
+}
+
+.close-icon {
+    width: 24px;
+    height: 24px;
+    fill: aqua;
+}
+
+.burger-modal {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+}
+
+@media screen and (min-width:768px) {
+    .burger-icon  {
+        display: none;
+    }
+
+    .profile-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-list {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .nav-list {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .header-div {
+        padding: 72px 80px 58px 80px; 
+    }
+
+    .nav-list {
+        font-size: 24px;
+    }
+
+    .profile-icon {
+        width: 63px;
+        height: 63px;
+    }
+
+}
