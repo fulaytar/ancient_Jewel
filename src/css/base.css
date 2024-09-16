@@ -11,4 +11,7 @@ body {
   body {
     cursor: url('../img/cursor.svg'), auto;
   }
+  a:hover {
+    cursor: url('../img/hand-cursor.svg'), auto;
+  }
 }
