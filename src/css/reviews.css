@@ -1,12 +1,16 @@
 /* стилізуй=) */
 .reviews {
     padding: 22px 0 22px 0;
+    background-image: url(../img/reviews/bgreviews.png);
+    backdrop-filter: blur(38px);
+    background-size: contain;
+    background-position: center;
 }
 
 .reviews-div {
     color: white;
-    margin: auto;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 8px;
@@ -16,6 +20,11 @@
     font-weight: 500;
     font-size: 24px;
     display: inline;
+}
+
+.star-icon {
+    width: 10px;
+    height: 9px;
 }
 
 .reviews-list {
@@ -74,4 +83,63 @@
     width: 5px;
     height: 35px;
     background: radial-gradient(50% 50% at 50% 50%, rgb(245, 148, 38) 0%, rgb(232, 140, 36) 62.00000047683716%, rgb(143, 86, 22) 100%);
+}
+
+@media screen and (min-width:768px) {
+    .reviews-list {
+        overflow:visible;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        font-size: 18px;
+        line-height: 1.2em;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .review {
+        width: 411px;
+        height: 167px;
+        padding: 22px 30px 36px 28px;
+        gap: 38px;
+        border-radius: 16px;
+    }
+
+    .reviews-img {
+        width: 97px;
+        height: 97px;
+        margin-top: 12px;
+    }
+
+    .star-icon {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media screen and (min-width:1439px) {
+    .reviews {
+        min-width: 1440px;
+        min-height: 961px;
+    }
+
+    .reviews-list .review:nth-child(5) {
+        margin-right: 1px;
+      }
+
+    .reviews-list {
+        width: 1284px;
+        gap: 20px;
+    }
+
+    .reviews-div {
+        gap: 48px;
+    }
+
+    .reviews-title {
+        margin-right: auto;
+        font-size: 52px;
+    }
 }

@@ -15,27 +15,27 @@ reviews.forEach(data => {
           </div>
           <ul class="stars-list">
             <li class="star">
-              <svg class="star-icon" width="10" height="9">
+              <svg class="star-icon">
                 <use href="../img/icons_sprite.svg#star" ></use>
               </svg>
             </li>
             <li class="star">
-              <svg class="star-icon" width="10" height="9">
+              <svg class="star-icon">
                 <use href="../img/icons_sprite.svg#star" ></use>
               </svg>
             </li>
             <li class="star">
-              <svg class="star-icon" width="10" height="9">
+              <svg class="star-icon">
                 <use href="../img/icons_sprite.svg#star" ></use>
               </svg>
             </li>
             <li class="star">
-              <svg class="star-icon" width="10" height="9">
+              <svg class="star-icon">
                 <use href="../img/icons_sprite.svg#star" ></use>
               </svg>
             </li>
             <li class="star">
-              <svg class="star-icon" width="10" height="9">
+              <svg class="star-icon">
                 <use href="../img/icons_sprite.svg#star" ></use>
               </svg>
             </li>
