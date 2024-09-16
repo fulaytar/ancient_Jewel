@@ -72,7 +72,7 @@
   right: 0;
   bottom: 43px;
   background: rgba(0, 0, 0, 0.4); /* Чорне затемнення з прозорістю 40% */
-  backdrop-filter: blur(8px); /* Ефект розмиття */
+  backdrop-filter: blur(14px); /* Ефект розмиття */
   z-index: 1; /* Шар розмиття під контентом */
 }
 
