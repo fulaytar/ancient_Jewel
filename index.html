@@ -17,12 +17,62 @@
     />
     <link rel="icon" type="image/png" href="/ancient_Jewel/assets/favicon-CKKgQDD1.png" />
     <script type="module" crossorigin src="/ancient_Jewel/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/ancient_Jewel/assets/styles-BI83zlut.css">
+    <link rel="stylesheet" crossorigin href="/ancient_Jewel/assets/styles-D70LhlqN.css">
   </head>
   <body>
     <header class="header">
-  <div class="container"></div>
+  <div class="container">
+
+    <div class="header-div">
+
+      <div class="profile-icon"></div>
+
+        <button type="button" class="header-button" id="burger-button">
+          <svg class="burger-icon">
+            <use href="../img/icons_sprite.svg#burger"></use>
+          </svg>
+        </button>
+        
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#about">About the game</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#howtoplay">How To Play</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#advantages">Advantages</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="hidden burger-modal" id="burger-modal">
+
+    <button class="header-button" id="close-button">
+
+      <svg class="close-icon">
+        <use href="../img/icons_sprite.svg#close_burger"></use>
+      </svg>
+
+    </button>
+
+    <nav>
+      <ul class="nav-list-in-modal">
+        <li><a href="#about">About the game</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#howtoplay">How To Play</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#advantages">Advantages</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
 </header>
+
 <!-- f -->
 
     <main>
@@ -96,23 +146,33 @@
   </div>
 </section>
 
-      <section class="about">
+      <section class="about" id="about">
   <div class="container"></div>
 </section>
 
-      <section class="reviews">
+      <section class="reviews" id="reviews">
+  <div class="container">
+
+    <div class="reviews-div">
+
+      <h2 class="reviews-title" >Reviews</h2>
+
+      <ul class="reviews-list" id="reviews-list"></ul>
+
+    </div>
+
+  </div>
+</section>
+
+      <section class="howtoplay" id="howtoplay">
   <div class="container"></div>
 </section>
 
-      <section class="howtoplay">
+      <section class="gallery" id="gallery">
   <div class="container"></div>
 </section>
 
-      <section class="gallery">
-  <div class="container"></div>
-</section>
-
-      <section class="advantages">
+      <section class="advantages" id="advantages">
   <div class="container"></div>
 </section>
 
