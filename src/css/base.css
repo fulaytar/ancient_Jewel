@@ -6,3 +6,12 @@ body {
   color: #ffffff;
   overflow-x: hidden;
 }
+
+@media screen and (min-width: 1440px) {
+  body {
+    cursor: url('../img/cursor.svg'), auto;
+  }
+  a:hover {
+    cursor: url('../img/hand-cursor.svg'), auto;
+  }
+}
