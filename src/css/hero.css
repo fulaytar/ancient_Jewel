@@ -148,11 +148,14 @@
     right: 32%;
     top: 31%;
   }
-
   .card3 {
     top: 8%;
     right: 9%;
     width: 222px;
     height: 468px;
+  }
+  .hero::before {
+    top: 154px;
+    bottom: 155px;
   }
 }
