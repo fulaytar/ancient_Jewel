@@ -1,9 +1,5 @@
 /* стилізуй=) */ 
 /* Ok */
-body{
-    background-color: #F59426;
-}
-
 .header {
     position: relative;
 }
@@ -14,9 +10,6 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.navigation {
 }
 
 .nav-list {
