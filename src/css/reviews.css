@@ -3,8 +3,10 @@
     padding: 22px 0 22px 0;
     background-image: url(../img/reviews/bgreviews.png);
     backdrop-filter: blur(38px);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    
 }
 
 .reviews-div {
