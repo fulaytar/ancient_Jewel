@@ -1,1 +1,53 @@
-/* стилізуй=) */
+.gallery {
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+div .swiper-slide {
+  width: 156px;
+  height: 328px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* .swiper-slide {
+  transform: none !important;
+} */
+.swiper-slide-active {
+  /* Кастомізуйте transform для активного слайда */
+  transform: scale(1.2) translateZ(0px); /* Збільшення активного слайда */
+  z-index: 10; /* Підйом активного слайда */
+}
+
+/* Стилі для попереднього і наступного слайдів */
+.swiper-slide-prev,
+.swiper-slide-next {
+  /* Кастомізуйте transform для попереднього і наступного слайдів */
+  transform: scale(0.9) translateZ(-50px); /* Зменшення і віддалення попереднього і наступного слайдів */
+  z-index: 5; /* Зниження підйому */
+}
+
+/* Стилі для слайдів, що не є активними, попередніми або наступними */
+.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev):not(
+    .swiper-slide-next
+  ) {
+  /* Кастомні стилі для інших слайдів */
+  transform: scale(0.8) translateZ(-100px); /* Зменшення і віддалення інших слайдів */
+}
