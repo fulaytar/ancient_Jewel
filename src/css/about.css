@@ -1,1 +1,189 @@
 /* стилізуй=) */
+.about {
+  position: relative;
+  padding-top: 64px;
+  padding-bottom: 35px;
+  background-image: url('../img/about/bgabout.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about:before {
+  content: '';
+  position: absolute;
+  top: 63px;
+  left: 0;
+  right: 0;
+  bottom: 35px;
+  background: rgba(0, 0, 0, 0.4); /* Чорне затемнення з прозорістю 40% */
+  backdrop-filter: blur(19px); /* Розмиття фону */
+  z-index: 1; /* Шар розмиття та затемнення під контентом */
+}
+
+.about .container {
+  z-index: 3;
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.about_list_text li:last-child p {
+  margin-bottom: 8px;
+}
+.about_title {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.about_list_text {
+  font-size: 10px;
+  font-weight: 400;
+  max-width: 181px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: auto;
+}
+.about_card1 {
+  width: 109px;
+  height: 240px;
+  position: absolute;
+  top: 82px;
+  z-index: 3;
+  left: -6%;
+  filter: drop-shadow(14px 23px 34px rgba(0, 0, 0, 0.86))
+    drop-shadow(-14px -22px 34px rgba(0, 0, 0, 0.25));
+}
+.about_card2 {
+  width: 67px;
+  height: 150px;
+  position: absolute;
+  z-index: 2;
+  top: 67%;
+  left: 7%;
+  filter: drop-shadow(14px 23px 34px rgba(0, 0, 0, 0.86))
+    drop-shadow(-14px -22px 34px rgba(0, 0, 0, 0.25));
+}
+.about_card3 {
+  width: 64px;
+  height: 136px;
+  position: absolute;
+  z-index: 1;
+  top: 65%;
+  left: -2%;
+}
+.about_card4 {
+  width: 82px;
+  height: 170px;
+  position: absolute;
+  z-index: 2;
+  top: 14%;
+  left: 5%;
+}
+.about_card5 {
+  width: 68px;
+  height: 144px;
+  position: absolute;
+  z-index: 1;
+  top: 6%;
+  left: -1%;
+}
+.about_card5_desktop,
+.about_card6_desktop,
+.about_card7_desktop {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    padding-top: 222px;
+    padding-bottom: 159px;
+  }
+  .about:before {
+    top: 222px;
+    bottom: 159px;
+  }
+  .about .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .about_title {
+    text-wrap: nowrap;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    font-size: 52px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .about_list_text {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .about_content {
+    max-width: 530px;
+    margin-left: auto;
+  }
+  .about_list_text {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+  .about_card1 {
+    width: 342px;
+    height: 722px;
+    z-index: 10;
+    top: -26%;
+    left: 30%;
+  }
+  .about_card2 {
+    width: 320px;
+    height: 678px;
+    z-index: 9;
+    top: -21%;
+    left: 24.5%;
+  }
+  .about_card3 {
+    width: 302px;
+    height: 638px;
+    z-index: 8;
+    top: -16.5%;
+    left: 20%;
+  }
+  .about_card4 {
+    width: 284px;
+    height: 602px;
+    z-index: 7;
+    top: -11.5%;
+    left: 16%;
+  }
+  .about_card5 {
+    display: none;
+  }
+  .about_card5_desktop {
+    display: block;
+    position: absolute;
+    width: 268px;
+    height: 566px;
+    z-index: 6;
+    top: -8.5%;
+    left: 12.5%;
+  }
+  .about_card6_desktop {
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 532px;
+    z-index: 5;
+    top: -5.5%;
+    left: 9%;
+  }
+  .about_card7_desktop {
+    display: block;
+    position: absolute;
+    width: 232px;
+    height: 492px;
+    z-index: 4;
+    top: -1.5%;
+    left: 5.5%;
+  }
+}
