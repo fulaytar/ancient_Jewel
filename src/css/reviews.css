@@ -1,13 +1,14 @@
 /* стилізуй=) */
 .reviews {
-    padding: 93px 0 22px 0;
+    padding: 33px 0 22px 0;
     background-image: url(../img/reviews/bgreviews.png);
     backdrop-filter: blur(38px);
     background-size: cover;
-    height: 918px;
     background-repeat: no-repeat;
     background-position: center;
     
+}
+* {
 }
 
 .reviews-div {
@@ -126,7 +127,7 @@
     .reviews {
         min-width: 1440px;
         min-height: 961px;
-        padding-top: 193px;
+        padding-top: 130px;
     }
 
     .reviews-list .review:nth-child(5) {

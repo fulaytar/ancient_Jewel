@@ -46,6 +46,10 @@
     color: #F59426;
 }
 
+.nav-list-in-modal a {
+    font-size: 14px;
+}
+
 .burger-icon {
     width: 24px;
     height: 24px;
