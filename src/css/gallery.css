@@ -63,6 +63,7 @@
 .my-swiper-button-next {
   width: 20px;
   height: 20px;
+  cursor: pointer;
   fill: #fff;
   position: absolute;
   z-index: 5;
