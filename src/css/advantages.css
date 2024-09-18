@@ -1,1 +1,187 @@
 /* стилізуй=) */
+
+.advantages {
+    box-sizing: content-box;
+    height: 320px;
+    width: 320px;
+    padding: 18px 0;
+    font-weight: 400;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 10px;
+    color: white;
+    background-image: url(../img/advantages/bgadvantages.png);
+}
+
+.blur {
+    backdrop-filter: blur(16px);
+    overflow: hidden;
+}
+
+.advantages p {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.4em;
+}
+
+.advantages h2 {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+.card-title {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    padding-bottom: 7px;
+}
+
+.adv-div-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: rgb(245, 148, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 20px 12px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    height: 246px;
+    width: 300px;
+    padding-left: 6px;
+    transition: transform 0.8s ease;
+}
+
+.hidden-items {
+    overflow: hidden;
+}
+
+.advantages-item {
+    padding: 8px 12px 8px 8px;
+    box-sizing: border-box;
+    width: 138px;
+    height: 87px;
+    backdrop-filter: blur(53.900001525878906px);
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.25), 1px 1px 1px 0 rgba(0, 0, 0, 0.25), -4px -4px 6px 0 rgba(200, 200, 200, 0.25);
+    background: linear-gradient(360deg, rgba(2, 2, 2, 0.4) 0%, rgba(62, 62, 62, 0.4) 100%);
+    border-radius: 4px;
+}
+
+.arrow-svg {
+    width: 20px;
+    height: 20px;
+}
+
+.buttons-div {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.buttons-div button {
+    padding: 0;
+}
+
+.page-number {
+    font-weight: 300;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.page-number::before,
+.page-number::after {
+    content: '';
+    flex: 1;
+    border: 1px solid #fff;
+    width: 53px;
+    margin: 7px 
+}
+
+.second-page {
+    padding-right: 320px;
+}
+
+.fp {
+    display: none;
+}
+
+@media screen and (min-width:1440px) {
+    .advantages {
+        width: 100%;
+        height: 550px;
+        padding: 110px 0;
+    }
+
+    .buttons-div {
+        display: none;
+    }
+
+    .advantages-item {
+        border-radius: 16px;
+        width: 306px;
+        padding: 24px 14px 38px 18px;
+        height: 198px;
+    }
+
+    .advantages-list {
+        flex-direction: row;
+        height: 528px;
+        align-items: center;
+        justify-content: center;
+        gap: 18px 19px;
+        width: 1300px;
+        padding-left: 0;
+        overflow: auto;
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    .card-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .advantages p {
+        font-size: 18px;
+    }
+
+    .adv-div-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .card-title {
+        font-size: 28px;
+        gap: 30px;
+        margin-bottom: 18px;
+    }
+
+    .advantages h2 {
+        font-size: 52px;
+        text-align: start;
+    }
+
+    .list-div-adv-section {
+        width: 1300px;
+    }
+
+}
