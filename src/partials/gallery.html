@@ -1,6 +1,12 @@
 <section class="gallery" id="gallery">
   <div class="container">
-    <h2 class="gallery_title">Gallery</h2>
+    <div class="gallery_desktop">
+      <h2 class="gallery_title">Gallery</h2>
+      <p class="gallery_p">
+        Immerse yourself in the atmosphere of the game and explore stunning
+        visual scenes that will prepare you for the adventures ahead.
+      </p>
+    </div>
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -201,18 +207,13 @@
         </div>
       </div>
       <!-- Add Pagination -->
-      <div class="my-swiper-button-next">
-        <svg height="20" width="20">
-          <use href="./img/icons_sprite.svg#arrow_right"></use>
-        </svg>
-      </div>
-      <div class="my-swiper-button-prev">
-        <svg height="20" width="20">
-          <use href="./img/icons_sprite.svg#arrow_left"></use>
-        </svg>
-      </div>
-      <div></div>
-      <span id="current-slide-number">1</span>
+      <svg class="my-swiper-button-next" height="20" width="20">
+        <use href="./img/icons_sprite.svg#arrow_right"></use>
+      </svg>
+      <svg class="my-swiper-button-prev" height="20" width="20">
+        <use href="./img/icons_sprite.svg#arrow_left"></use>
+      </svg>
+      <span id="current-slide-number">01</span>
       <!-- Тут буде номер слайда -->
     </div>
   </div>
