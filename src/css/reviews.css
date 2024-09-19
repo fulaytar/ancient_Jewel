@@ -14,13 +14,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* Чорне затемнення з прозорістю 40% */
-  backdrop-filter: blur(14px); /* Розмиття фону */
-  z-index: 1; /* Шар розмиття та затемнення під контентом */
+  background: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(14px);
+  z-index: 1; 
 }
 .reviews .container {
   position: relative;
-  z-index: 2; /* Контент вище розмитого шару */
+  z-index: 2; 
 }
 
 .reviews-div {

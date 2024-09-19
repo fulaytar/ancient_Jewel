@@ -1,26 +1,53 @@
-console.log('advantages');
+document.addEventListener('DOMContentLoaded', () => {
+  const itemsPerPage = 4;
+  let currentPage = 1;
 
-const left = document.getElementById('left-btn')
-const right = document.getElementById('right-btn')
-const list = document.getElementById('list')
-const page = document.getElementById('page')
+  const items = document.querySelectorAll('.advantages-item');
+  const totalItems = items.length;
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-let currentPage = 0;
+  function updatePage() {
+    items.forEach((item, index) => {
+      item.style.display =
+        index >= (currentPage - 1) * itemsPerPage &&
+        index < currentPage * itemsPerPage
+          ? 'flex'
+          : 'none';
+    });
+    document.getElementById('page').textContent = String(currentPage).padStart(
+      2,
+      '0'
+    );
+  }
 
-right.addEventListener('click', () => {
-    if (currentPage < 1) {
-        currentPage++;
-        list.style.transform = `translateX(-${currentPage * 300}px)`;
-        page.textContent = '02'
-      }
-})
+  document.getElementById('left-btn').addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage--;
+      updatePage();
+    }
+  });
 
-left.addEventListener('click', () => {
-    if (currentPage > 0) {
-        currentPage--;
-        list.style.transform = `translateX(-${currentPage * 300}px)`;
-        page.textContent = '01'
-      }
-})
+  document.getElementById('right-btn').addEventListener('click', () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      updatePage();
+    }
+  });
 
 
+  updatePage();
+
+
+  function handleResize() {
+    if (window.innerWidth >= 1440) {
+      items.forEach(item => (item.style.display = 'flex'));
+      document.querySelector('.buttons-div').style.display = 'none';
+    } else {
+      document.querySelector('.buttons-div').style.display = 'flex';
+      updatePage();
+    }
+  }
+
+  window.addEventListener('resize', handleResize);
+  handleResize(); 
+});

@@ -1,15 +1,14 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
 
-// Спочатку відображаємо перший слайд
 document.getElementById('current-slide-number').textContent = 1;
 
 const swiper = new Swiper('.swiper', {
   effect: 'coverflow',
   centeredSlides: true,
-  slidesPerView: 1.38, // Кількість видимих слайдів
-  spaceBetween: -100, // Відстань між слайдами
-  initialSlide: 0, // Індекс починається з 0, але виводимо як 1
+  slidesPerView: 1.38,
+  spaceBetween: -100,
+  initialSlide: 0, 
   keyboard: {
     enabled: true,
   },
@@ -31,13 +30,11 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.my-swiper-button-prev',
   },
   breakpoints: {
-    // Настроювання для ширини екрану до 1440px
     1440: {
-      slidesPerView: 'auto', // Автоматичне масштабування слайдів
-      spaceBetween: -300, // Відстань між слайдами без пропусків
-      centeredSlides: true, // Вимкнути центрування
+      slidesPerView: 'auto', 
+      spaceBetween: -300, 
+      centeredSlides: true, 
     },
-    // Настроювання для ширини екрану менше 1440px
     1400: {
       slidesPerView: 1.38,
       spaceBetween: -100,
@@ -46,13 +43,11 @@ const swiper = new Swiper('.swiper', {
   },
   on: {
     init: function () {
-      // При ініціалізації отримуємо номер слайда через this
       document.getElementById('current-slide-number').textContent = `0${
         this.realIndex + 1
       }`;
     },
     slideChange: function () {
-      // Оновлюємо номер слайда через this при зміні
       document.getElementById('current-slide-number').textContent = `0${
         this.realIndex + 1
       }`;

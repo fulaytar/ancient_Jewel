@@ -71,20 +71,20 @@
   left: 0;
   right: 0;
   bottom: 43px;
-  background: rgba(0, 0, 0, 0.4); /* Чорне затемнення з прозорістю 40% */
-  backdrop-filter: blur(14px); /* Ефект розмиття */
-  z-index: 1; /* Шар розмиття під контентом */
+  background: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: blur(14px); 
+  z-index: 1; 
 }
 
 .how_blur {
   position: relative;
-  z-index: 2; /* Контент вище розмиття */
+  z-index: 2;
 }
 
 .how_title,
 .how_list {
   position: relative;
-  z-index: 2; /* Контент також поверх розмиття */
+  z-index: 2; 
 }
 .hov_card1 {
   position: absolute;
