@@ -16,7 +16,6 @@ function openModal() {
   burgerModal.classList.remove('hidden');
   burgerButton.classList.add('hidden');
 
-
   window.addEventListener('scroll', handleScroll);
 }
 
@@ -25,3 +24,15 @@ function handleScroll() {
     closeModal();
   }
 }
+
+document.addEventListener('scroll', function () {
+  const headerDiv = document.querySelector('.header-div');
+
+  if (window.scrollY > 100) {
+    // Збільшуємо всі відступи до 20px, якщо прокручено більше ніж 100 пікселів
+    headerDiv.style.padding = '20px';
+  } else {
+    // Повертаємо початкові відступи, якщо прокручено менше ніж 100 пікселів
+    headerDiv.style.padding = '';
+  }
+});
