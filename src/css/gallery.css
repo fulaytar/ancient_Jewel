@@ -15,8 +15,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4); 
-  backdrop-filter: blur(8px); 
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
   z-index: 1;
 }
 #current-slide-number {
@@ -52,7 +52,7 @@
   padding-right: 16px;
   overflow: hidden;
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
 
 .gallery .swiper {
@@ -80,7 +80,7 @@
 .gallery_title {
   text-align: center;
   font-size: 24px;
-  margin-top: 22px;
+  margin-top: 60px;
   margin-bottom: 12px;
   font-weight: 500;
 }

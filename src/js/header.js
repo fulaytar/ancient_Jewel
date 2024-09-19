@@ -29,7 +29,7 @@ document.addEventListener('scroll', function () {
   const headerDiv = document.querySelector('.header-div');
 
   if (window.scrollY > 100) {
-    headerDiv.style.padding = '20px';
+    headerDiv.style.padding = '16px';
   } else {
     headerDiv.style.padding = '';
   }
