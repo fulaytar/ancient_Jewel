@@ -185,6 +185,9 @@
     margin-right: auto;
     font-size: 52px;
   }
+  .reviews-title {
+    padding-left: 50px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .reviews {
@@ -192,6 +195,7 @@
     min-height: 961px;
     padding-top: 130px;
   }
+
   .review {
     width: 411px;
     height: 167px;
@@ -214,5 +218,6 @@
   .reviews-title {
     margin-right: auto;
     font-size: 52px;
+    padding-left: 80px;
   }
 }
