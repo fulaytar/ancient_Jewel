@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiper', {
   centeredSlides: true,
   slidesPerView: 1.38,
   spaceBetween: -100,
-  initialSlide: 0, 
+  initialSlide: 0,
   keyboard: {
     enabled: true,
   },
@@ -30,17 +30,18 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.my-swiper-button-prev',
   },
   breakpoints: {
-    1440: {
-      slidesPerView: 'auto', 
-      spaceBetween: -300, 
-      centeredSlides: true, 
+    1280: {
+      slidesPerView: 3.09,
+      spaceBetween: -300,
+      centeredSlides: true,
     },
-    1400: {
-      slidesPerView: 1.38,
-      spaceBetween: -100,
+    1440: {
+      slidesPerView: 'auto',
+      spaceBetween: -300,
       centeredSlides: true,
     },
   },
+
   on: {
     init: function () {
       document.getElementById('current-slide-number').textContent = `0${

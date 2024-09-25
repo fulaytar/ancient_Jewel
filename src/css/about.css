@@ -93,8 +93,7 @@
 .about_card7_desktop {
   display: none;
 }
-
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .about {
     padding-top: 222px;
     padding-bottom: 159px;
@@ -104,8 +103,8 @@
     bottom: 159px;
   }
   .about .container {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .about_title {
     text-wrap: nowrap;
@@ -132,28 +131,28 @@
     height: 722px;
     z-index: 10;
     top: -26%;
-    left: 30%;
+    left: 25%;
   }
   .about_card2 {
     width: 320px;
     height: 678px;
     z-index: 9;
     top: -21%;
-    left: 24.5%;
+    left: 21%;
   }
   .about_card3 {
     width: 302px;
     height: 638px;
     z-index: 8;
     top: -16.5%;
-    left: 20%;
+    left: 16.5%;
   }
   .about_card4 {
     width: 284px;
     height: 602px;
     z-index: 7;
     top: -11.5%;
-    left: 16%;
+    left: 13%;
   }
   .about_card5 {
     display: none;
@@ -165,7 +164,7 @@
     height: 566px;
     z-index: 6;
     top: -8.5%;
-    left: 12.5%;
+    left: 9.5%;
   }
   .about_card6_desktop {
     display: block;
@@ -174,7 +173,7 @@
     height: 532px;
     z-index: 5;
     top: -5.5%;
-    left: 9%;
+    left: 6%;
   }
   .about_card7_desktop {
     display: block;
@@ -183,6 +182,40 @@
     height: 492px;
     z-index: 4;
     top: -1.5%;
+    left: 3.5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .about_card1 {
+    left: 30%;
+  }
+
+  .about_card2 {
+    left: 24.5%;
+  }
+
+  .about_card3 {
+    left: 20%;
+  }
+
+  .about_card4 {
+    left: 16%;
+  }
+
+  .about_card5_desktop {
+    left: 12.5%;
+  }
+
+  .about_card6_desktop {
+    left: 9%;
+  }
+
+  .about_card7_desktop {
     left: 5.5%;
   }
 }

@@ -149,7 +149,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .advantages {
     width: 100%;
     padding: 110px 0;
@@ -169,9 +169,11 @@
 
   .advantages-item {
     border-radius: 16px;
-    width: 306px;
-    padding: 24px 14px 38px 18px;
+    /* width: 306px;
+    padding: 24px 14px 38px 18px; */
     height: 198px;
+    width: 278px;
+    padding: 24px 14px 21px 18px;
   }
   .blur h2 {
     margin-top: 24px;
@@ -185,8 +187,10 @@
     height: 528px;
     align-items: center;
     justify-content: center;
-    gap: 18px 19px;
-    width: 1300px;
+    /* gap: 18px 19px;
+    width: 1300px; */
+    gap: 10px 15px;
+    width: 100%;
     padding-left: 0;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -220,6 +224,7 @@
   }
 
   .list-div-adv-section {
-    width: 1300px;
+    width: 100%;
+    /* width: 1300px; */
   }
 }

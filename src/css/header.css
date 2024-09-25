@@ -5,11 +5,9 @@
   height: 71px;
   z-index: 5;
 }
+
 .header .container {
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      /* Dark overlay */ rgba(0, 0, 0, 0.5)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('/img/hero/bghero.png');
   backdrop-filter: blur(5px);
   background-size: cover;
@@ -18,6 +16,7 @@
   background-position: center;
   position: relative;
 }
+
 .header-div {
   padding: 32px 16px 16px 16px;
   display: flex;
@@ -40,25 +39,19 @@
   box-shadow: -4px -4px 4px 0px #949494 inset, 1px 1px 1px 0px #000000 inset,
     4px 4px 6px 0px #000000 inset;
   backdrop-filter: blur(27px);
-  box-shadow: -4px -4px 4px 0px rgba(148, 148, 148, 0.25) inset,
-    1px 1px 1px 0px rgba(0, 0, 0, 0.25) inset,
-    4px 4px 6px 0px rgba(0, 0, 0, 0.25) inset;
-  backdrop-filter: blur(26px);
   display: flex;
   flex-direction: column;
   color: white;
-  height: 28px;
-  align-items: end;
   padding: 18px 18px;
   width: 152px;
   justify-content: space-between;
   height: 234px;
-  border-radius: 16px;
 }
 
 .nav-list a:hover,
 .nav-list a:focus {
   color: #f59426;
+  transition: color 0.3s ease; /* Додавання переходу для кольору */
 }
 
 .nav-list-in-modal a {
@@ -120,29 +113,45 @@
   }
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .nav-list {
     display: none;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header-div {
-    padding-top: 52px;
-    padding-bottom: 39px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .nav-list li > a {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1;
+  }
+
+  .profile-icon {
+    width: 53px;
+    height: 53px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-div {
+    padding-top: 52px;
+    padding-bottom: 39px;
   }
 
   .profile-icon {
     width: 63px;
     height: 63px;
   }
-}
-
-.hidden {
-  display: none;
+  .nav-list li > a {
+    font-size: 24px;
+    line-height: 1;
+  }
 }

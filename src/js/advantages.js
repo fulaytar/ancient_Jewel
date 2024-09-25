@@ -34,12 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-
   updatePage();
 
-
   function handleResize() {
-    if (window.innerWidth >= 1440) {
+    if (window.innerWidth >= 1280) {
       items.forEach(item => (item.style.display = 'flex'));
       document.querySelector('.buttons-div').style.display = 'none';
     } else {
@@ -49,5 +47,5 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('resize', handleResize);
-  handleResize(); 
+  handleResize();
 });

@@ -132,7 +132,7 @@
   transform: rotate(30deg);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .howtoplay {
     padding-top: 108px;
     padding-bottom: 86px;

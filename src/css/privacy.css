@@ -68,7 +68,7 @@
   color: #fff;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .privacy {
     width: 1280px;
     gap: 23px;
